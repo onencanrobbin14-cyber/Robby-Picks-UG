@@ -36,61 +36,27 @@ nav a:hover {
 }
 
 
-/* ===== HERO SECTION ===== */
-
+/* ===== HERO SECTION FIXED ===== */
 .hero {
+  /* Change this from 70vh or 90vh to 40vh or 50vh */
+  min-height: 50vh; 
 
-  min-height: 70vh;
-
-  background:
-  linear-gradient(rgba(0,0,0,0.6),
-  rgba(0,0,0,0.6)),
-  url('images/hero.jpg');
-
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/hero.jpg');
   background-size: cover;
   background-position: center;
 
   display: flex;
   justify-content: center;
   align-items: center;
-
   text-align: center;
   color: white;
-
   padding: 40px 20px;
 }
 
-.hero-content {
-  max-width: 700px;
-}
-
+/* Make the heading a bit smaller for mobile so it doesn't crowd the screen */
 .hero-content h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
-}
-
-.hero-content p {
-  font-size: 18px;
-  margin-bottom: 25px;
-  line-height: 1.6;
-}
-
-.hero-btn {
-  background: #00c853;
-  color: white;
-
-  padding: 14px 28px;
-
-  text-decoration: none;
-
-  border-radius: 8px;
-
-  transition: 0.3s;
-}
-
-.hero-btn:hover {
-  background: #009624;
-  transform: scale(1.05);
+  font-size: 36px; /* Reduced from 48px */
+  margin-bottom: 15px;
 }
 /* ===== MOBILE RESPONSIVE ===== */
 
