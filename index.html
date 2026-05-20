@@ -6,18 +6,25 @@
 </head>
 
 <body>
-
+<script scr="script.js">
+</script>
 <body>
 
 <header>
   <div class="logo">Robby Picks UG</div>
-  <nav>
+  <div class="menu-toggle" id="menuToggle">
+  ☰
+</div>
+  <nav id="navbar">
     <a href="index.html">Home</a>
     <a href="gadgets.html">Gadgets</a>
     <a href="fashion.html">Fashion</a>
     <a href="deals.html">Deals</a>
     <a href="contact.html">Contact</a>
   </nav>
+  <button id="darkModeToggle">
+  🌙
+</button>
 </header>
 
 <section class="hero">
@@ -29,16 +36,60 @@
   
 </section>
 
+ <!-- SEARCH BAR -->
+<div class="search-container">
+  <input
+  type="text"
+  id="searchInput"
+  placeholder="Search products...">
+
+</div>
+
+<!-- FEATURED SLIDER -->
+<section class="slider-section">
+  <h2>🔥 Featured Picks</h2>
+  <div class="slider-container">
+    <button class="slider-btn prev" id="prevBtn">
+      ❮
+    </button>
+    <div class="slider-track" id="sliderTrack">
+
+      <!-- ITEM 1 -->
+      <div class="slide">
+        <img src="images/SamsungA14.jpg"
+        alt="Samsung">
+        <h3>Samsung Galaxy A14</h3>
+      </div>
+
+      <!-- ITEM 2 -->
+      <div class="slide">
+        <img src="images/Earbuds.jpg"
+        alt="Earbuds">
+        <h3>Wireless Earbuds</h3>
+      </div>
+
+      <!-- ITEM 3 -->
+      <div class="slide">
+        <img src="images/mens sneakers.jpg"
+        alt="Sneakers">
+        <h3>Men Sneakers</h3>
+      </div>
+    </div>
+    <button class="slider-btn next" id="nextBtn">
+      ❯
+    </button>
+  </div>
+  
+</section>
 <div class="section">
   <h2>🔥 Trending Gadgets</h2>
-  <div class="products">
+  <div class="product searchable">
     <div class="product">
       <img src="images/SamsungA14.jpg" alt="Samsung Galaxy A14">
       <h3>Samsung Galaxy A14</h3>
       <p>Reliable performance, long battery life.</p>
       <a href="#" class="btn">View Deal</a>
     </div>
-
     <div class="product">
       <img src="images/Earbuds.jpg" alt="Wireless Earbuds">
       <h3>Wireless Earbuds</h3>
@@ -47,7 +98,6 @@
     </div>
   </div>
 </div>
-
 <div class="section">
   <h2>👟 Fashion Picks</h2>
   <div class="products">
@@ -58,8 +108,6 @@
       <a href="#" class="btn">View Deal</a>
       
     </div>
-    
-
     <div class="product">
       <img src="images/shirts.jpg" alt="T-Shirts">
       <h3>Casual T-Shirts</h3>
@@ -68,138 +116,95 @@
     </div>
   </div>
 </div>
+
 <!-- WHY SHOP WITH US -->
-
-<section class="trust-section">
-
+<section class="trust-section reveal">
   <h2>Why Shop With Robby Picks UG?</h2>
-
   <div class="trust-container">
-
-
     <div class="trust-box">
-
       <div class="trust-icon">⚡</div>
-
       <h3>Fast Trending Picks</h3>
-
-      <p>
-        We curate trending gadgets, fashion and accessories people actually love.
+      <p>We curate trending gadgets, fashion and accessories people actually love.
       </p>
 
     </div>
 
-
-
     <div class="trust-box">
-
       <div class="trust-icon">💰</div>
-
       <h3>Affordable Deals</h3>
-
       <p>
         Discover products with smart pricing suitable for students and young buyers.
       </p>
-
     </div>
-
-
-
     <div class="trust-box">
-
       <div class="trust-icon">🔥</div>
-
       <h3>Premium Selections</h3>
-
       <p>
         We focus on quality-looking products with modern appeal and everyday value.
       </p>
-
     </div>
-
   </div>
-
 </section>
+
 <!-- FEATURED DEALS BANNER -->
-
-<section class="featured-banner">
-
+<section class="featured-banner reveal">
   <div class="banner-content">
-
     <h2>🔥 Hot Deals This Week</h2>
-
     <p>
       Save big on trending gadgets, fashion and accessories before the offers end.
     </p>
-
     <a href="deals.html" class="banner-btn">
       Explore Deals
     </a>
-
   </div>
 
 </section>
+
 <!-- WHY VISITORS LOVE US -->
-
-<section class="reviews-section">
-
+<section class="reviews-section reveal">
   <h2>⭐ Why Visitors Love Robby Picks UG</h2>
-
   <div class="reviews-container">
 
-
     <!-- CARD 1 -->
-
     <div class="review-card">
-
       <div class="stars">
         ⭐⭐⭐⭐⭐
       </div>
-
       <p>
         Affordable gadgets and fashion picks curated for smart online shoppers.
       </p>
-
     </div>
 
-
-
     <!-- CARD 2 -->
-
     <div class="review-card">
-
       <div class="stars">
         ⭐⭐⭐⭐⭐
       </div>
-
       <p>
         Clean browsing experience with trending products selected for modern lifestyles.
       </p>
-
     </div>
 
-
     <!-- CARD 3 -->
-
     <div class="review-card">
-
       <div class="stars">
         ⭐⭐⭐⭐⭐
       </div>
-
       <p>
         Discover stylish products, trending deals and everyday essentials in one place.
       </p>
-
     </div>
-
   </div>
-
 </section>
-
 <footer>
     <p>&copy; 2026 Robby Picks UG. All rights reserved.</p>
 </footer>
+
+<!-- BACK TO TOP BUTTON -->
+<button id="backToTop">
+  ↑
+</button>
+<script src="script.js"></script>
 
 </body>
 </html>
