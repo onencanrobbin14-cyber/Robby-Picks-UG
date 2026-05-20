@@ -541,6 +541,70 @@
     transform: scale(1.1);
   }
 
+  /*  ABOUT PAGE */
+.about-content {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+.about-content h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.about-content p {
+  margin-bottom: 25px;
+  line-height: 1.8;
+  font-size: 18px;
+  color: #555;
+}
+
+/* CONTACT PAGE */
+.contact-container {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+}
+.contact-container h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+/* FORM */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* INPUTS */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+
+/* BUTTON */
+.contact-form button {
+  background: #00c853;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.contact-form button:hover {
+  background: #009624;
+  transform: scale(1.03);
+}
+
   /* SCROLL REVEAL ANIMATION */
   .reveal {
     opacity: 0;
