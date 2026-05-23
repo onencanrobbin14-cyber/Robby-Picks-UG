@@ -99,6 +99,7 @@ prevBtn.addEventListener("click", prevSlide);
 
 /* AUTO SLIDE */
 setInterval(nextSlide, 3000);
+
 /*  LIVE PRODUCT SEARCH */
 const searchInput =
 document.getElementById("searchInput");
